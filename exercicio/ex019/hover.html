@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../OmegaEngine.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            text-align: center;
+            display: inline-block;
+            border: 1px solid black;
+            color: darkgoldenrod;
+            background-color: darkseagreen;
+            width: 200px;
+            height: 70px;
+        }
+
+        div > p{
+            display:none;
+        }
+
+       div:hover > p {
+            display: block;
+            background-color: greenyellow;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Encontre  o texto perdido...</p>
+    <div>
+       Passe o mouse aqui
+        <p>
+            ACHOU!!
+        </p>
+    </div>
+</body>
+</html>
