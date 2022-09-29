@@ -5,4 +5,4 @@
 
 <a href="https://franciscodevilla.github.io/html-css/gglass/index.html">Página do GoogleGlass</a>
 
-<a href="https://franciscodevilla.github.io/html-css/cordel/index.html">Página do GoogleGlass</a>
+<a href="https://franciscodevilla.github.io/html-css/cordel/index.html">Cordel-Moderno</a>
