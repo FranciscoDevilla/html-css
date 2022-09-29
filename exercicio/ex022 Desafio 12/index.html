@@ -9,9 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
     <title>Cordel-Moderno</title>
     <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body {
+            min-height: 100vh;
+            background-color: darkgray;
+        }
         a#autor {
             text-decoration: none;
             color: white;
+            font-weight: 900;
+            
         }
 
         header {
@@ -21,12 +32,14 @@
         header h1{
             color:white;
             text-align: center;
-            font-size: 5em;
+            font-size: 4em;
+            font-variant:small-caps;
     
         }
         header p {
             color: white;
             text-align: center;
+            padding-bottom: 50px;
             
         }
         a#autor:hover {
@@ -35,11 +48,30 @@
         main {
             text-align: justify;
         }
+        section{
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            padding-left: 30px;
+        }
+        section.normal {
+            color: black;
+            background-color: white;
+        }
+        section.imagem {
+            background-color: rgb(86, 80, 80);
+            color: white;
+        }
+        section.imagem > p {
+            background-color:rgba(0, 0, 0, 0.247);
+            width: 400px;
+        }
         footer {
             box-sizing: auto;
             background-color: black;
             color: white;
             text-align: center;
+            padding: 10px;
         }
         footer a {
             text-decoration: none;
@@ -58,7 +90,7 @@
     </header>
     
     <main>
-        <section>
+        <section class="normal">
             <p>
                 Estou ficando cansado <br>
                 Da tal tecnologia <br>
@@ -70,7 +102,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="imagem">
             <p>
                 Não é mais como era antes <br>
                 É tudo abreviado <br>
@@ -82,7 +114,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="normal">
             <p>
                 Arroba agora não pesa <br>
                 É parte de um endereço <br>
@@ -103,7 +135,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="imagem">
             <p>
                 Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
@@ -115,7 +147,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="normal">
             <p>
                 Agora, escrevo e envio <br>
                 Chegando na mesma hora <br>
