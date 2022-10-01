@@ -18,46 +18,88 @@
     }
 
 
-    td {
+    td, th {
         border: 1px solid black;
-        padding: 8px;
+        padding: 10px;
+        /* text-align: center; ...... Alinhamento Horizontal ↔️ 
+           vertical-align: middle;... Alinhamento Vertical ↕️ */   
+     }
+     caption {
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+     }
+
+    tbody > tr:nth-child(2n) /* odd(impar)   even(par) no lugar do 2n */ {
+        background-color: rgb(248, 244, 172);
     }
 
+     thead, tfoot {
+        background-color: #383838;
+        color: white;
+     }
+
+     td.num {
+        text-align: right;
+     }
 </style>
-<body>
-    <h1>Teste de tabela simples</h1>
     <!-- 
         HIERARQUIA DE TABELAS ( simples )
         TABLE               = tabela
         TABLE ROW    (TR)   = linha da tabela
         TABLE HEADER (TH)   = cabeçalho da tabela
         TABLE DATA   (TD)   = dado do campo
+
+        CAPTION  - Observação acima do Thead 
+        THEAD
+        TBODY
+        THEAD
     -->
+<body>
+    
+
     <table>
-        <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-            <td>D1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-            <td>D2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-            <td>D3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-            <td>D4</td>
-        </tr>
+        <caption>Equipamentos de Produção de Conteúdos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Equipamentos</th>
+                <th scope="col" style="width: 100px;">Valor R$</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Valor total em R$</th>
+                <td class="num"><strong>10.700,00</strong></td>
+            </tr>
+        </tfoot>
+        
+        <tbody>
+            <tr>
+                <td>Câmera Poket II</td>
+                <td class="num">3.500</td>
+            </tr>
+            <tr>
+                <td>Suporte de testa</td>
+                <td class="num">300</td>
+            </tr>
+            <tr>
+                <td>Camera GO PRO HERO10</td>
+                <td class="num">3200</td>
+            </tr>
+            <tr>
+                <td>Suporte aprova d'agua</td>
+                <td class="num">400</td>
+            </tr>
+            <tr>
+                <td>Tripé com balance</td>
+                <td class="num">800</td>
+            </tr>
+            <tr>
+                <td>Câmera térmica</td>
+                <td class="num">2500</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
